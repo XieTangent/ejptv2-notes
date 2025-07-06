@@ -9,7 +9,7 @@
 | 主題 | 簡介 |
 |------|------|
 | [Linux 指令與權限](./notes/linux.md) | 常用 Linux 指令與檔案
-| [Linux Privilege Escalation](./notes/privesc) | Linux 權限提升技巧與常見攻擊手法 |
+| [Linux Privilege Escalation](./notes/privesc.md) | Linux 權限提升技巧與常見攻擊手法 |
 
 
 ---
