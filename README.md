@@ -9,7 +9,7 @@
 | 主題 | 簡介 |
 |------|------|
 | [Linux 指令與權限](./notes/linux.md) | 常用 Linux 指令、檔案系統與權限管理 |
-| [Linux Privilege Escalation](./notes/privesc.md) | 權限提升技巧與常見攻擊方式（如 SUID、sudo、capabilities） |
+| [Linux Privilege Escalation](./notes/linux-privilege-escalation/README.md) | 權限提升技巧與常見攻擊方式（如 SUID、sudo、capabilities） |
 
 ---
 
