@@ -12,7 +12,6 @@ Linux 權限提升的第一步是枚舉（Enumeration）。本篇整理你在登
 - [🌐 網路與連線狀況](#🌐-網路與連線狀況)
 - [🌿 環境變數偵察](#🌿-環境變數偵察)
 - [🧰 常見 Linux 權限提升自動化工具](#🧰-常見-Linux-權限提升自動化工具)
-- [🧪 其他實用指令](#🧪-其他實用指令)
 
 
 ---
@@ -46,7 +45,7 @@ Linux 權限提升的第一步是枚舉（Enumeration）。本篇整理你在登
 |------|------|
 | `ls -la` | 一定要加 `-la` 才不會漏掉隱藏檔 |
 | `find / -perm -u=s -type f 2>/dev/null` | 尋找 SUID bit 的檔案（提權常用） |
-| `find / -writable -type d 2>/dev/null` | 尋找可寫入的資料夾 |
+| `find / -writable -type d 2>/dev/null` | 尋找可寫入的資料夾 (可搭配cut -d "/" -f 2 | sort -u)|
 | `find / -name *.sh` | 搜尋腳本檔案 |
 | `find / -type f -size +100M 2>/dev/null` | 找出可疑的大型檔案 |
 | `find / -name perl*`、`python*`、`gcc*` | 確認系統有無支援開發工具與語言 |
@@ -86,7 +85,6 @@ Linux 權限提升的第一步是枚舉（Enumeration）。本篇整理你在登
 
 ---
 
-
 ## 🧰 常見 Linux 權限提升自動化工具
 
 這些工具可大幅加快系統枚舉與提權向量搜尋的速度，但請注意：它們**可能無法涵蓋所有情境**，使用後仍應手動檢查可能的提權方式。
@@ -103,14 +101,5 @@ Linux 權限提升的第一步是枚舉（Enumeration）。本篇整理你在登
 - 若目標機沒有 Python，你將無法執行 Python 工具
 - 建議多熟一點工具，依現場環境選擇使用
 
-## 🧪 其他實用指令
-更多常用指令可到 [Linux 指令與權限](../notes/linux.md) 查詢
-
-| 指令 | 說明 |
-|------|------|
-| `locate` | 快速搜尋檔案（若資料庫更新） |
-| `cut` / `sort` / `uniq` | 可用於處理 /etc/passwd、log 資料等 |
-| `grep` | 篩選關鍵字，例如 `grep home /etc/passwd` |
-
-
 ---
+
