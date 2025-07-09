@@ -11,6 +11,7 @@
 
 ---
 
+
 ## ⚙️ 一般常用 flag
 
 | flag     | long flag               | 說明                                        |
@@ -20,6 +21,22 @@
 | -o       | --output                | 將結果輸出到指定檔案                        |
 | --delay  | --delay                 | 請求間延遲時間，避免被偵測或封鎖             |
 | --debug  | --debug                 | 顯示除錯資訊，有助於排錯                      |
+
+---
+
+### 🧰 系統內建字典
+
+| 字典路徑                                                            | 說明                            |
+|---------------------------------------------------------------------|---------------------------------|
+| `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`      | DirBuster 小型字典（較快）      |
+| `/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`     | DirBuster 中型字典（平衡）      |
+| `/usr/share/wordlists/dirbuster/directory-list-1.0.txt`            | DirBuster 舊版字典               |
+| `/usr/share/wordlists/dirb/small.txt`                              | dirb 小型字典                    |
+| `/usr/share/wordlists/dirb/common.txt`                             | dirb 常用字典（常見目錄）       |
+| `/usr/share/wordlists/dirb/big.txt`                                | dirb 大型字典（全面但較慢）     |
+| `/usr/share/wordlists/dirb/extensions_common.txt`                  | 常見副檔名列表，適合檔案 fuzzing |
+
+---
 
 #### 通過命令查看更多
 ```bash
