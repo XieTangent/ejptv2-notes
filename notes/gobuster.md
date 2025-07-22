@@ -36,6 +36,8 @@
 | `/usr/share/wordlists/dirb/big.txt`                                | dirb 大型字典（全面但較慢）     |
 | `/usr/share/wordlists/dirb/extensions_common.txt`                  | 常見副檔名列表，適合檔案 fuzzing |
 
+## 可透過 [SecLists](https://github.com/danielmiessler/SecLists) 獲得更多字典
+
 ---
 
 #### 通過命令查看更多
