@@ -17,9 +17,14 @@
 
 | 工具名 | 簡介 |
 |--------|------|
-| [Hydra](./notes/hydra.md) | 密碼爆破工具，支援多種協議如 SSH、HTTP、FTP 等 |
-| [John](./notes/john.md) | 密碼破解工具，常用於破解 hash 值 |
-| [Gobuster](./notes/gobuster.md) | 網站目錄、子網域、虛擬主機枚舉工具，支援多模式掃描 |
+| [Nmap](./notes/tools/nmap.md)         | 強大的網路掃描工具，主要用於端口掃描、服務偵測與系統指紋辨識 |
+| [Burp Suite](./notes/tools/burpsuite.md) | Web 應用安全測試平台，提供代理攔截、漏洞掃描與漏洞利用輔助工具 |
+| [Hydra](./notes/tools/hydra.md) | 密碼爆破工具，支援多種協議如 SSH、HTTP、FTP 等 |
+| [John](./notes/tools/john.md) | 密碼破解工具，常用於破解 hash 值 |
+| [Hashcat](./notes/tools/hashcat.md) | hash 破解工具|
+| [Gobuster](./notes/tools/gobuster.md) | 網站目錄、子網域、虛擬主機枚舉工具，支援多模式掃描 |
+| [Nikto](./notes/tools/nikto.md) | 網站安全掃描工具，能檢測常見漏洞與錯誤配置 |
+| [Wpscan](./notes/tools/wpscan.md) | 專門針對 WordPress 平台的安全掃描工具，用於發現漏洞和弱點 |
 
 ---
 
@@ -32,4 +37,10 @@
 
 ---
 
-📌 所有筆記均以 Markdown 撰寫，並持續更新中。如有錯誤或需補充，歡迎回報與修正。
+## 🏆 CTF 筆記
+
+| 主題 | 簡介 |
+|------|------|
+| [Easy Peasy](./notes/challenges/easy_peasy/README.md) | 涵蓋端口掃描、Web 掃描、hash 破解、資料隱寫及 Linux 權限提升 |
+
+---
